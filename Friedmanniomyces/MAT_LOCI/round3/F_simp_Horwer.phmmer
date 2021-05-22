@@ -1,0 +1,741 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             all_MAT_Horwer.faa
+# target sequence database:        Friedmanniomyces_simplex_CCFEE_5184.aa.fasta
+# per-dom hits tabular output:     F_simp_Horwer.domtbl
+# sequence reporting threshold:    E-value <= 1e-05
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       OTA25185.1  [L=358]
+Description: hypothetical protein BTJ68_12014 [Hortaea werneckii EXF-2000]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+    8.6e-59  199.1   8.8    3.7e-58  197.0   8.8    1.8  1  B0A55|B0A55_3972  
+
+
+Domain annotation for each sequence (and alignments):
+>> B0A55|B0A55_3972  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  197.0   8.8   2.7e-62   3.7e-58     112     355 ..     234     491 ..     222     494 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 197.0 bits;  conditional E-value: 2.7e-62
+        OTA25185.1 112 pfeakwailakaysilrggrdkdeapldeffrlcaprigvippeqyqqmmgwqlipaqegeqdktphivrtfipdvdtfaeqyrtttlsaddl 204
+                       pf akwailaka s+lrg+r kdeapld f+ l  p +g++ pe yq mmgwq+    +++qdktp++vr f pd  tf  +y +ttls ddl
+  B0A55|B0A55_3972 234 PFSAKWAILAKACSVLRGSRGKDEAPLDFFLGLVVPLMGIVAPEHYQAMMGWQVTAPSDSDQDKTPRVVRLFTPDFSTFDNRYISTTLSVDDL 326
+                       9******************************************************************************************** PP
+
+        OTA25185.1 205 vnfctgagyvrvstpaiaspaahgaltmavqpnntltt............qlnlpangnegidmplspwsamfahnmqaamagp.hvgptnsv 284
+                       v +c ++gy++ +    +   ahgaltmav p  t  t             ln+ a +n  i  plsp s  +a  +  a+ +    +p    
+  B0A55|B0A55_3972 327 VQYCMSSGYLNDTNARASVGNAHGALTMAVHPTVTAVTaataaplhthpaNLNITAANNATIADPLSPDSLSLATQLGMAINSTlPPAPAAPP 419
+                       **********98776666678***********98754422223222232257888889999************99988777553145788889 PP
+
+        OTA25185.1 285 alsnatsavsgdsvfhhanmfdptghfqvsfdpnq.sndladsgvfdafdpatnlgvddmlpfdwdefinee 355
+                       al+ a +a ++   + +  +fdpt+ f  +f+p + +  l d g + afdp  +++vdd l +dw +f+n++
+  B0A55|B0A55_3972 420 ALTTAATAATNALNYSYGTFFDPTSKFDYTFNPTEeTAGLGDDGFYPAFDPTASMSVDDALNLDWSQFVNDD 491
+                       9999999999999999*****************872568*******************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (358 nodes)
+Target sequences:                      13766  (6143021 residues searched)
+Passed MSV filter:                       530  (0.0385007); expected 275.3 (0.02)
+Passed bias filter:                      264  (0.0191777); expected 275.3 (0.02)
+Passed Vit filter:                        16  (0.00116228); expected 13.8 (0.001)
+Passed Fwd filter:                         1  (7.26427e-05); expected 0.1 (1e-05)
+Initial search space (Z):              13766  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.30u 0.01s 00:00:00.31 Elapsed: 00:00:00.60
+# Mc/sec: 3626.05
+//
+Query:       OTA32074.1  [L=358]
+Description: hypothetical protein BTJ68_07250 [Hortaea werneckii EXF-2000]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+    1.6e-57  195.1   6.6    2.7e-57  194.4   6.6    1.3  1  B0A55|B0A55_3972  
+
+
+Domain annotation for each sequence (and alignments):
+>> B0A55|B0A55_3972  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  194.4   6.6     2e-61   2.7e-57     112     356 ..     234     492 ..     226     494 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 194.4 bits;  conditional E-value: 2e-61
+        OTA32074.1 112 pfeakwailakaysilrggrdkdeapldeffrlcaprigvippglyqqmmgwqlipakegeqdktpqivrtfvpdvdtfadeytttnlsaddl 204
+                       pf akwailaka s+lrg+r kdeapld f+ l  p +g++ p  yq mmgwq+    +++qdktp++vr f pd  tf + y +t ls ddl
+  B0A55|B0A55_3972 234 PFSAKWAILAKACSVLRGSRGKDEAPLDFFLGLVVPLMGIVAPEHYQAMMGWQVTAPSDSDQDKTPRVVRLFTPDFSTFDNRYISTTLSVDDL 326
+                       9******************************************************************************************** PP
+
+        OTA32074.1 205 vnfcteagyvrvntpaiaspaahsaltmavqpnttlttqltl......pvngn..egndml....lspwsasfatvmqaamag.pnagptnsm 284
+                       v +c  +gy++      +   ah altmav p  t  t  t       p n n   +n+      lsp s s+at +  a+ +    +p    
+  B0A55|B0A55_3972 327 VQYCMSSGYLNDTNARASVGNAHGALTMAVHPTVTAVTAATAaplhthPANLNitAANNATiadpLSPDSLSLATQLGMAINStLPPAPAAPP 419
+                       *********9865555555679***********988776553211222555443234443223336888899999887766541345688889 PP
+
+        OTA32074.1 285 alsnatsavsgegvfahadmfdptghfqisfdpnqn.ngltdrggfdafdpatnfgvddmlpfdwdqfineeg 356
+                       al+ a +a ++   +++  +fdpt+ f  +f+p +   gl d g + afdp  +++vdd l +dw qf+n++g
+  B0A55|B0A55_3972 420 ALTTAATAATNALNYSYGTFFDPTSKFDYTFNPTEEtAGLGDDGFYPAFDPTASMSVDDALNLDWSQFVNDDG 492
+                       99999999999999*******************875269********************************99 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (358 nodes)
+Target sequences:                      13766  (6143021 residues searched)
+Passed MSV filter:                       600  (0.0435856); expected 275.3 (0.02)
+Passed bias filter:                      286  (0.0207758); expected 275.3 (0.02)
+Passed Vit filter:                        25  (0.00181607); expected 13.8 (0.001)
+Passed Fwd filter:                         1  (7.26427e-05); expected 0.1 (1e-05)
+Initial search space (Z):              13766  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.29u 0.01s 00:00:00.30 Elapsed: 00:00:00.61
+# Mc/sec: 3584.79
+//
+Query:       OTA38829.1  [L=968]
+Description: hypothetical protein BTJ68_01425 [Hortaea werneckii EXF-2000]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+   7.7e-174  580.1  74.1   8.9e-125  417.8  36.3    5.3  3  B0A55|B0A55_5988  
+    8.8e-21   73.6  14.5    3.7e-12   45.0   1.7    3.9  4  B0A55|B0A55_8820  
+    3.1e-19   68.4   1.2    5.8e-19   67.6   1.2    1.4  1  B0A55|B0A55_1597  
+    4.2e-19   68.0   1.7    7.8e-19   67.1   1.7    1.4  1  B0A55|B0A55_451   
+    4.6e-19   67.9   2.3    6.7e-19   67.3   2.3    1.2  1  B0A55|B0A55_3971  
+    7.6e-06   24.1   0.1    8.7e-06   23.9   0.1    1.0  1  B0A55|B0A55_6816  
+
+
+Domain annotation for each sequence (and alignments):
+>> B0A55|B0A55_5988  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  417.8  36.3  3.9e-128  8.9e-125     110     498 ..       6     346 ..       1     350 [. 0.89
+   2 !   13.7   0.1   4.6e-06      0.01     537     574 ..     349     386 ..     343     391 .. 0.83
+   3 !  151.3  26.4   1.3e-47     3e-44     604     963 ..     390     679 ..     385     681 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 417.8 bits;  conditional E-value: 3.9e-128
+        OTA38829.1 110 eesppskstrkrnactveeedkeldsasttpvhtrassgdstahvcicqpdpkiprprnafilyrqhhqaqvvaqnpglanpeiskiigeqwq 202
+                        +spp  +trkr a  ve ed  ldsa+ttp+h+r ssgdst hvcicqpdpkiprprnafilyrqhhqaqvv+q+pglanpeiskiigeqwq
+  B0A55|B0A55_5988   6 SKSPPFTNTRKRTASIVEIEDTALDSATTTPIHSRGSSGDSTLHVCICQPDPKIPRPRNAFILYRQHHQAQVVSQHPGLANPEISKIIGEQWQ 98 
+                       689****************************************************************************************** PP
+
+        OTA38829.1 203 nqppeiknkwkalaeeeklrhqqqyptyryqpkrngrrnslssetpgsagerpkcakcggrsilapstpftnasasgvspasvpptpgqaitp 295
+                       nqp eiknkwkalaeeeklrhqqqyptyryqpkrngrr s+ss+  ++ ge+pkc kcggrs l pstp      s+ spasvpptpg aitp
+  B0A55|B0A55_5988  99 NQPIEIKNKWKALAEEEKLRHQQQYPTYRYQPKRNGRRGSVSSDA-NATGEKPKCTKCGGRSTLIPSTP------SSASPASVPPTPGSAITP 184
+                       ******************************************997.678*******************9......4468************** PP
+
+        OTA38829.1 296 vsrtlpilrdlslqspanrrmgrvfpsnsnitsimsstgnnsadhqpaypderddigplspetkrrrfngeh.vsigrnipprfasgp...lv 384
+                       vsrtl  l++lslqspa rrmgr f   sn+    s   n        + +erdd+gplsp+ krr++ +++   ++r +p r+  +p    v
+  B0A55|B0A55_5988 185 VSRTLRGLNNLSLQSPAVRRMGRAFHY-SNM----SPVHN-------GHAEERDDVGPLSPDMKRRKYTSDYgTPVSRTMPQRYVVAPpgaQV 265
+                       *************************64.554....44444.......35689*****************9984579*******9865422278 PP
+
+        OTA38829.1 385 qpgtpypfshhqhqqqahpplpslspqshhthphpyqqpplttrreslpglhgigvspstggaggsgaggpmappppprppgmgyqqhrlsqg 477
+                        pgtp+pf+                pq++   phpy       r+eslpgl+g+ vsp           gpm  ppppr pgmgyqqhr+sqg
+  B0A55|B0A55_5988 266 GPGTPFPFA----------------PQAQ--SPHPYPPAMTHVRQESLPGLRGV-VSPP----------GPM--PPPPR-PGMGYQQHRVSQG 326
+                       9******96................3433..36777555555799********9.6763..........688..56667.6************ PP
+
+        OTA38829.1 478 hlphdhrsltlpplqtggnvg 498
+                       h+ hd rsl lpplqtg+  g
+  B0A55|B0A55_5988 327 HIHHD-RSLQLPPLQTGSVSG 346
+                       **998.8*********97544 PP
+
+  == domain 2  score: 13.7 bits;  conditional E-value: 4.6e-06
+        OTA38829.1 537 stsaasassakliedvirgmdfrykigilakvappaal 574
+                         +aa + + k +++ i +m fryk+ +l++vappa +
+  B0A55|B0A55_5988 349 GAAAAISGAGKTVDEQIMAMPFRYKLKVLSQVAPPAPM 386
+                       4556667788*************************975 PP
+
+  == domain 3  score: 151.3 bits;  conditional E-value: 1.3e-47
+        OTA38829.1 604 argpliaiegddaeavrelgkwlnrelgkkgggaaeedlevklvegpldegreevedgkkrkkpiieyhllitewlaksdeiveslqyrratp 696
+                        rgpliaiegd a+av +lgkwl +el +        dl v l ++p     +   ++ k+ kp+ + hll  +w  ksdeive++ y+    
+  B0A55|B0A55_5988 390 PRGPLIAIEGDSADAVADLGKWLYEELKR------SSDLAVTLFDSP-----DLFTNSDKKNKPMQQCHLLAADWQCKSDEIVEAITYKPV-- 469
+                       69************************965......4699****9998.....34566778899************************9842.. PP
+
+        OTA38829.1 697 tttaaaapavaadesgedadktmseappavqekakserkleedyddsdgsgskeesmashsaqdapsqtpnpsgeevttstspppakppheea 789
+                            a p           d  m +a p  +e a+s r ++e+yddsd+ + +     s+ +   p                         e 
+  B0A55|B0A55_5988 470 -----AVP----------VDSAMVDASP--REPAQSHRDIDENYDDSDSPAKEPGPKPSEPSSSLPKTQ--------------------TAET 525
+                       .....333..........3455667766..6999************99644333333333333333222....................2233 PP
+
+        OTA38829.1 790 aeeesmqldpp..hp.ppptssspspanntnnttakpvillpnfslhtstafalripidansqysapdhwqwaatqwrgvvgpdltiyvrdss 879
+                       a e  ++  p    p pp t++ p+p  +    t kpv l+ ++sl+ s  fa ripi  +  ys  dhwqw atqwrgvvgpdlt++vrd+ 
+  B0A55|B0A55_5988 526 ASEMDLETTPTtaKPfPPTTTTIPAP--H----TPKPVGLIADYSLRASNVFACRIPIGPHDPYSPSDHWQWTATQWRGVVGPDLTVFVRDAV 612
+                       33334444432112303344455555..3....68********************************************************75 PP
+
+        OTA38829.1 880 sggsntgamggetggtaggsrgrvvggnggvemgeegnlfvvrrt...vgggvgaggkrsg.evegsvlrrlafevgewvrafggsge 963
+                        g        ge    a         g + ve+ eeg +fvv+rt   v gg + +g + g e+e+svlrrl fevgewvrafgg   
+  B0A55|B0A55_5988 613 GG--------GE----A---------GKATVEILEEGGVFVVKRTscaVTGGWSESGSEGGlELEASVLRRLGFEVGEWVRAFGGVKR 679
+                       33........23....2.........34569*************8666567766666666659*********************9765 PP
+
+>> B0A55|B0A55_8820  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.9   5.4   7.2e-15   1.7e-11      99     238 ..     169     324 ..      87     343 .. 0.73
+   2 ?   -0.9   2.7      0.12   2.8e+02     758     795 ..     437     474 ..     389     484 .. 0.84
+   3 !   45.0   1.7   1.6e-15   3.7e-12     120     238 ..     516     650 ..     504     667 .. 0.67
+   4 ?   -1.1   1.0      0.14   3.3e+02     439     459 ..     826     846 ..     752     884 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 42.9 bits;  conditional E-value: 7.2e-15
+        OTA38829.1  99 lsggsktpltpeesppskstrkrnactve.eedkeldsas.ttp....vhtras.sgdstahvcicqp.dpkiprprnafilyrqhhqaqvv. 182
+                       +s  s  p+t +     k  ++r++  +  +edk+  s    tp    ++ r    + s a+ c+c      iprprnafilyrq     +  
+  B0A55|B0A55_8820 169 VSTFSPYPMTDKHVHSGKRKQRRDSLDLSgDEDKQRPSKRkNTPrtgaLNLRTGrKNPSIAQNCVCGTaKQHIPRPRNAFILYRQAMTKDIAk 261
+                       5566778888888888888888888766437888877654134422224555431467899*****862567*************86544431 PP
+
+        OTA38829.1 183 .....aq.npglanpe.iskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryqpkrng 238
+                            ++ +p   n + +s   g +w n+   ++ +++ la +e   h ++yp yryqp r +
+  B0A55|B0A55_8820 262 saevrSRgDPHKINHKlVSSEAGSRWNNESKAVRARFQQLARQEVADHARKYPDYRYQPGRKN 324
+                       1110033246555554368889*************************************6642 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.12
+        OTA38829.1 758 aqdapsqtpnpsgeevttstspppakppheeaaeeesm 795
+                       +  a + tp p+g+e +  t+p  + pp   + e   +
+  B0A55|B0A55_8820 437 SSTASTVTPQPTGDEESAITTPYTSAPPSVHSRERYDL 474
+                       45677889999999999999999999998877776555 PP
+
+  == domain 3  score: 45.0 bits;  conditional E-value: 1.6e-15
+        OTA38829.1 120 krnac.tveeedkeldsasttpvht......rassgdstahvcicqp.dpkiprprnafilyrqhhqaqvv......aq.npglanpe.iski 196
+                       +r++    ++edk+  s   t  +t       a  + s a+ c+c      iprprnafilyrq     +       ++ +p   n + +s  
+  B0A55|B0A55_8820 516 RRDSLdLSDDEDKQRPSKRKTARRTgapnprTARKNPSIAQNCVCGTaKQHIPRPRNAFILYRQAMTKDIAksaevrSRgDPHKINHKlVSSE 608
+                       444441346677777766555444411111145677899******862567*************86544431111003324555554426888 PP
+
+        OTA38829.1 197 igeqwqnqppeiknkwkalaeeeklrhqqqyptyryqpkrng 238
+                        g +w n+   ++ +++ la +e   h ++yp yryqp r +
+  B0A55|B0A55_8820 609 AGLRWNNESKAVRARFQQLARQEVADHARKYPNYRYQPGRKN 650
+                       999***********************************6643 PP
+
+  == domain 4  score: -1.1 bits;  conditional E-value: 0.14
+        OTA38829.1 439 gvspstggaggsgaggpmapp 459
+                       g s s+g+ gg ga+g  +p 
+  B0A55|B0A55_8820 826 GSSSSSGSVGGEGAAGASSPS 846
+                       455555555555555544443 PP
+
+>> B0A55|B0A55_1597  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.6   1.2   2.5e-22   5.8e-19     145     241 ..      16     109 ..       7     132 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 67.6 bits;  conditional E-value: 2.5e-22
+        OTA38829.1 145 assgdstahvcicqpdpkiprprnafilyrqhhqaqvvaqnpglanpeiskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryqpkrn 237
+                       a++g +t          k+prp nafi+yr+   + vvaqnpg+ n  is iige+w+ +  e++  ++  ae+ k +h+  +p y+yqp++ 
+  B0A55|B0A55_1597  16 ANAGQATVSKG---AADKVPRPPNAFIIYRKDWHSTVVAQNPGVHNNSISVIIGEKWRGESKEVREIYRGKAEDAKRQHELNHPEYQYQPRKP 105
+                       55555554333...2359************************************************************************987 PP
+
+        OTA38829.1 238 grrn 241
+                       +++ 
+  B0A55|B0A55_1597 106 SEKK 109
+                       6544 PP
+
+>> B0A55|B0A55_451  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.1   1.7   3.4e-22   7.8e-19     145     241 ..      16     109 ..       7     131 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 67.1 bits;  conditional E-value: 3.4e-22
+       OTA38829.1 145 assgdstahvcicqpdpkiprprnafilyrqhhqaqvvaqnpglanpeiskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryqpkrng 238
+                      a++g +t          k+prp nafi+yr+   + vvaqnpg+ n  is iige+w+++  e++  ++  ae+ k +h+  +p y+yqp++ +
+  B0A55|B0A55_451  16 ANAGQATVSKG---AADKVPRPPNAFIIYRKDWHSTVVAQNPGVHNNSISVIIGEKWRSESEEVREIYRRKAEDAKRQHELNHPEYQYQPRKPS 106
+                      55555554333...2359************************************************************************9876 PP
+
+       OTA38829.1 239 rrn 241
+                      ++ 
+  B0A55|B0A55_451 107 EKK 109
+                      544 PP
+
+>> B0A55|B0A55_3971  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.3   2.3   2.9e-22   6.7e-19     145     241 ..     103     196 ..      92     220 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 67.3 bits;  conditional E-value: 2.9e-22
+        OTA38829.1 145 assgdstahvcicqpdpkiprprnafilyrqhhqaqvvaqnpglanpeiskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryqpkrn 237
+                       a++g +t          k+prp nafi+yr+   + vvaqnpg+ n  is iige+w+++  e++  ++  ae+ k +h+  +p y+yqp++ 
+  B0A55|B0A55_3971 103 ANAGQATVSKG---AADKVPRPPNAFIIYRKDWHSTVVAQNPGVHNNSISVIIGEKWRSESEEVREIYRRKAEDAKRQHELNHPEYQYQPRKP 192
+                       55555554433...3359************************************************************************987 PP
+
+        OTA38829.1 238 grrn 241
+                       +++ 
+  B0A55|B0A55_3971 193 SEKK 196
+                       6544 PP
+
+>> B0A55|B0A55_6816  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.9   0.1   3.8e-09   8.7e-06     151     233 ..      18     101 ..       3     109 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 23.9 bits;  conditional E-value: 3.8e-09
+        OTA38829.1 151 tahvcicqpdpkip.rprnafilyrqhhqaqvvaqnpglanpeiskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryq 233
+                        a     + dp +p r  +a++++   ++ +v   npg+   e+ k++ge+w+    + k  + a a  +k r++++   y  q
+  B0A55|B0A55_6816  18 KADGGKKKKDPNMPkRGLSAYMFFANDQRDKVREDNPGIKFGEVGKMLGEKWKALNDKQKAPYDAKAAADKKRYEEEKAAYTAQ 101
+                       4444556789***94457899999999999999**********************99*******************99999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (968 nodes)
+Target sequences:                      13766  (6143021 residues searched)
+Passed MSV filter:                      2710  (0.196862); expected 275.3 (0.02)
+Passed bias filter:                      434  (0.031527); expected 275.3 (0.02)
+Passed Vit filter:                        53  (0.00385007); expected 13.8 (0.001)
+Passed Fwd filter:                         9  (0.000653785); expected 0.1 (1e-05)
+Initial search space (Z):              13766  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 1.10u 0.03s 00:00:01.13 Elapsed: 00:00:02.21
+# Mc/sec: 2683.71
+//
+Query:       OTA34553.1  [L=891]
+Description: hypothetical protein BTJ68_06703 [Hortaea werneckii EXF-2000]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+   2.2e-140  469.2  64.3   1.1e-124  417.3  37.9    4.8  3  B0A55|B0A55_5988   
+    4.9e-21   74.3  16.8      4e-12   44.8   1.6    3.7  4  B0A55|B0A55_8820   
+    2.9e-19   68.4   0.8    2.9e-19   68.4   0.8    1.9  2  B0A55|B0A55_1597   
+    5.5e-19   67.5   3.2    6.7e-19   67.2   2.4    1.4  1  B0A55|B0A55_3971   
+    6.3e-19   67.3   3.1    1.2e-18   66.4   2.8    1.7  1  B0A55|B0A55_451    
+    1.2e-07   30.1   2.5    1.2e-07   30.1   2.5    1.8  2  B0A55|B0A55_12680  
+    6.1e-06   24.4   0.1      7e-06   24.2   0.1    1.0  1  B0A55|B0A55_6816   
+
+
+Domain annotation for each sequence (and alignments):
+>> B0A55|B0A55_5988  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  417.3  37.9  5.4e-128  1.1e-124     113     510 ..       6     356 ..       1     360 [. 0.88
+   2 !   11.3   0.2   2.8e-05     0.056     551     590 ..     347     385 ..     341     390 .. 0.75
+   3 !   47.1  16.7   4.3e-16   8.4e-13     620     877 ..     388     585 ..     385     590 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 417.3 bits;  conditional E-value: 5.4e-128
+        OTA34553.1 113 eesppskstrkrnacivegedkeldsasttpvhtrassgdstahvcicqpdpkiprprnafilyrqhhqaqvvaqnpglanpeiskiigeqwq 205
+                        +spp  +trkr a ive ed  ldsa+ttp+h+r ssgdst hvcicqpdpkiprprnafilyrqhhqaqvv+q+pglanpeiskiigeqwq
+  B0A55|B0A55_5988   6 SKSPPFTNTRKRTASIVEIEDTALDSATTTPIHSRGSSGDSTLHVCICQPDPKIPRPRNAFILYRQHHQAQVVSQHPGLANPEISKIIGEQWQ 98 
+                       689****************************************************************************************** PP
+
+        OTA34553.1 206 nqppeiknkwkalaeeeklrhqqqyptyryqpkrngrrnslssetpgsagerpkcakcggrsilapstpftnasasgvspasvpptpghaitp 298
+                       nqp eiknkwkalaeeeklrhqqqyptyryqpkrngrr s+ss+  ++ ge+pkc kcggrs l pstp      s+ spasvpptpg aitp
+  B0A55|B0A55_5988  99 NQPIEIKNKWKALAEEEKLRHQQQYPTYRYQPKRNGRRGSVSSDA-NATGEKPKCTKCGGRSTLIPSTP------SSASPASVPPTPGSAITP 184
+                       ******************************************997.678*******************9......4468************** PP
+
+        OTA34553.1 299 vsrtlpvlrdlslqspanrrmgrvfpsnstitsimssngnnpadhhqpgypderddigplspetkrrrfngeh.vsigrnipprfasvp...a 387
+                       vsrtl  l++lslqspa rrmgr f  ++     m     +p   h  g+ +erdd+gplsp+ krr++ +++   ++r +p r+   p    
+  B0A55|B0A55_5988 185 VSRTLRGLNNLSLQSPAVRRMGRAFHYSN-----M-----SPV--H-NGHAEERDDVGPLSPDMKRRKYTSDYgTPVSRTMPQRYVVAPpgaQ 264
+                       ************************97432.....2.....233..2.3899*******************9984579********98773333 PP
+
+        OTA34553.1 388 vqpgtpypfshhqhqphpplpslpphhhpyqpqpqqptlttrreslpalhgigvsvppststisnagpmapppppprppgmgyqqhrlsqghl 480
+                       v pgtp+pf+ + + php           y p         r+eslp l+g+ vs pp        gpm   ppppr pgmgyqqhr+sqgh+
+  B0A55|B0A55_5988 265 VGPGTPFPFAPQAQSPHP-----------YPPAM----THVRQESLPGLRGV-VS-PP--------GPM---PPPPR-PGMGYQQHRVSQGHI 328
+                       77*******987777765...........43321....23699******997.22.33........666...66777.6************** PP
+
+        OTA34553.1 481 phdhrsltlpplhtrgnlvvgggnrssvsg 510
+                        hd rsl lppl+t g++   +g  +++sg
+  B0A55|B0A55_5988 329 HHD-RSLQLPPLQT-GSVSGPSGAAAAISG 356
+                       998.8*******98.555555566666666 PP
+
+  == domain 2  score: 11.3 bits;  conditional E-value: 2.8e-05
+        OTA34553.1 551 ssaattsaataakmiedvilrgmdfrykigilakvappag 590
+                        s a  + + a k +++ i+ +m fryk+ +l++vappa 
+  B0A55|B0A55_5988 347 PSGAAAAISGAGKTVDEQIM-AMPFRYKLKVLSQVAPPAP 385
+                       44455556667888888775.7****************95 PP
+
+  == domain 3  score: 47.1 bits;  conditional E-value: 4.3e-16
+        OTA34553.1 620 lmargpliaiegddaeavrelgrwlsrelgkkgggaaeeelevrlvegpldegreeleggnggkidkkkkkaiieyhllitewlaksdeives 712
+                        m rgpliaiegd a+av +lg+wl +el +        +l v l ++p      +l   n    d kk k + + hll  +w  ksdeive+
+  B0A55|B0A55_5988 388 AMPRGPLIAIEGDSADAVADLGKWLYEELKRS------SDLAVTLFDSP------DLFT-N---SD-KKNKPMQQCHLLAADWQCKSDEIVEA 463
+                       589*************************9654......57999999998......3432.3...35.4567899******************* PP
+
+        OTA34553.1 713 lryrratptttataapdvaaeeggedadktmseappptqekakserkleedyddsdgsaskdensashsaqdpadktptpsgeettistfp.. 803
+                       + y+         a p           d  m +a p  +e a+s r ++e+yddsd+ a            +p  k   ps+      ++p  
+  B0A55|B0A55_5988 464 ITYKPV-------AVP----------VDSAMVDASP--REPAQSHRDIDENYDDSDSPAK-----------EPGPKPSEPSS------SLPkt 520
+                       **9842.......333..........4667778877..689**************97653...........34433333332......22300 PP
+
+        OTA34553.1 804 qsikpsheedgqgesmqidpplp.pppptttssssspanntttakpiillpnfslhtstafalripidansqysa 877
+                       q+ + + e d     ++  p    p ppttt+    pa +  t kp+ l+ ++sl+ s  fa ripi  +  ys 
+  B0A55|B0A55_5988 521 QTAETASEMD-----LETTPTTAkPFPPTTTT---IPAPH--TPKPVGLIADYSLRASNVFACRIPIGPHDPYSP 585
+                       2233333333.....44445444044666654...46655..68*************************999984 PP
+
+>> B0A55|B0A55_8820  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.8   7.8   4.1e-15   8.1e-12      30     241 ..      89     324 ..      83     343 .. 0.69
+   2 ?   -2.6   1.2      0.44   8.7e+02      86     133 ..     435     480 ..     383     486 .. 0.61
+   3 !   44.8   1.6     2e-15     4e-12     126     241 ..     520     650 ..     505     667 .. 0.68
+   4 ?  -10.1  10.5         7   1.4e+04      78     555 ..     837     871 ..     823     885 .. 0.33
+
+  Alignments for each domain:
+  == domain 1  score: 43.8 bits;  conditional E-value: 4.1e-15
+        OTA34553.1  30 qpaaneqpgriifmrqlwqrtmpdhskq...nvlnksqsqiqddphrthpsggaagpsrr.....tsstvstrtrrrshslsvgsktpltpee 114
+                        pa + q g ii+  q     +p +++    ++  + qs i   p    p+g+  +p+          ++  +    ++ +s  s  p+t + 
+  B0A55|B0A55_8820  89 TPAESTQTGDIIYAPQPQYYALPQEAQGpyySLPLRPQSVIPIQPVPAPPAGAHYNPAVGwyyplQPQSMPVQVPAPAQLVSTFSPYPMTDKH 181
+                       577788888888888877777887765411134446777777777777777776666643111112344555666677888999999*****9 PP
+
+        OTA34553.1 115 sppskstrkrnaciveg.edkeldsas.ttp....vhtras.sgdstahvcicqp.dpkiprprnafilyrqhhqaqvv......aq.npgla 192
+                           k  ++r++  + g edk+  s    tp    ++ r    + s a+ c+c      iprprnafilyrq     +       ++ +p   
+  B0A55|B0A55_8820 182 VHSGKRKQRRDSLDLSGdEDKQRPSKRkNTPrtgaLNLRTGrKNPSIAQNCVCGTaKQHIPRPRNAFILYRQAMTKDIAksaevrSRgDPHKI 274
+                       999999999999988884688887754144422224555431567999*****862567*************865444311110033246555 PP
+
+        OTA34553.1 193 npe.iskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryqpkrng 241
+                       n + +s   g +w n+   ++ +++ la +e   h ++yp yryqp r +
+  B0A55|B0A55_8820 275 NHKlVSSEAGSRWNNESKAVRARFQQLARQEVADHARKYPDYRYQPGRKN 324
+                       554368889*************************************6642 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.44
+        OTA34553.1  86 rtsstvstrtrrrshslsvgsktpltpeesppskstrkrnaciveged 133
+                        tsst st t + +     +  tp t   +pps  +r+r       ed
+  B0A55|B0A55_8820 435 FTSSTASTVTPQPTGDEESAITTPYT--SAPPSVHSRERYDLSTVPED 480
+                       45566666665555555555555555..35666666666555555555 PP
+
+  == domain 3  score: 44.8 bits;  conditional E-value: 2e-15
+        OTA34553.1 126 acivegedkeldsasttpvht......rassgdstahvcicqp.dpkiprprnafilyrqhhqaqvv......aq.npglanpe.iskiigeq 203
+                         + + edk+  s   t  +t       a  + s a+ c+c      iprprnafilyrq     +       ++ +p   n + +s   g +
+  B0A55|B0A55_8820 520 LDLSDDEDKQRPSKRKTARRTgapnprTARKNPSIAQNCVCGTaKQHIPRPRNAFILYRQAMTKDIAksaevrSRgDPHKINHKlVSSEAGLR 612
+                       44566677776665554443311111145677899******862567*************86544431111003324555554426888999* PP
+
+        OTA34553.1 204 wqnqppeiknkwkalaeeeklrhqqqyptyryqpkrng 241
+                       w n+   ++ +++ la +e   h ++yp yryqp r +
+  B0A55|B0A55_8820 613 WNNESKAVRARFQQLARQEVADHARKYPNYRYQPGRKN 650
+                       **********************************6643 PP
+
+  == domain 4  score: -10.1 bits;  conditional E-value: 7
+        OTA34553.1  78 ggaagpsrrtsstvstrtrrrshslsvgsktpltpeesppskstrkrnacivegedkeldsasttpvhtrassgdstahvcicqpdpkiprpr 170
+                        gaag s  +                                                                                   
+  B0A55|B0A55_8820 837 EGAAGASSPS----------------------------------------------------------------------------------- 846
+                       1223332222................................................................................... PP
+
+        OTA34553.1 171 nafilyrqhhqaqvvaqnpglanpeiskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryqpkrngrrnslssetpgsagerpkcakc 263
+                                                                                                                    
+  B0A55|B0A55_8820   - ---------------------------------------------------------------------------------------------   -
+                       ............................................................................................. PP
+
+        OTA34553.1 264 ggrsilapstpftnasasgvspasvpptpghaitpvsrtlpvlrdlslqspanrrmgrvfpsnstitsimssngnnpadhhqpgypderddig 356
+                                                                                                                    
+  B0A55|B0A55_8820   - ---------------------------------------------------------------------------------------------   -
+                       ............................................................................................. PP
+
+        OTA34553.1 357 plspetkrrrfngehvsigrnipprfasvpavqpgtpypfshhqhqphpplpslpphhhpyqpqpqqptlttrreslpalhgigvsvppstst 449
+                                                                                                                    
+  B0A55|B0A55_8820   - ---------------------------------------------------------------------------------------------   -
+                       ............................................................................................. PP
+
+        OTA34553.1 450 isnagpmapppppprppgmgyqqhrlsqghlphdhrsltlpplhtrgnlvvgggnrssvsgpsgsfssggvtggstattaaaagmvrrslsgg 542
+                                                                                                        ++++ rr  s+ 
+  B0A55|B0A55_8820 847 ---------------------------------------------------------------------------------SSAISRRKSSAW 858
+                       .................................................................................233333333332 PP
+
+        OTA34553.1 543 nrdpasssssaat 555
+                           ass  ++a+
+  B0A55|B0A55_8820 859 GVGKASSPPTSAS 871
+                       2222222222111 PP
+
+>> B0A55|B0A55_1597  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   68.4   0.8   1.5e-22   2.9e-19     148     244 ..      16     109 ..       7     164 .. 0.87
+   2 ?   -4.9   2.6       2.1   4.1e+03       3      55 ..     245     298 ..     234     316 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 68.4 bits;  conditional E-value: 1.5e-22
+        OTA34553.1 148 assgdstahvcicqpdpkiprprnafilyrqhhqaqvvaqnpglanpeiskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryqpkrn 240
+                       a++g +t          k+prp nafi+yr+   + vvaqnpg+ n  is iige+w+ +  e++  ++  ae+ k +h+  +p y+yqp++ 
+  B0A55|B0A55_1597  16 ANAGQATVSKG---AADKVPRPPNAFIIYRKDWHSTVVAQNPGVHNNSISVIIGEKWRGESKEVREIYRGKAEDAKRQHELNHPEYQYQPRKP 105
+                       55555554333...2359************************************************************************987 PP
+
+        OTA34553.1 241 grrn 244
+                       +++ 
+  B0A55|B0A55_1597 106 SEKK 109
+                       6554 PP
+
+  == domain 2  score: -4.9 bits;  conditional E-value: 2.1
+        OTA34553.1   3 taqspqqqhhhsslptpwipavpvqqtqpaa.neqpgriifmrqlwqrtmpdhs 55 
+                        aq+p+ +++ ++l  p +      qt   a    p    f +q w++ +  +s
+  B0A55|B0A55_1597 245 NAQAPRPRQYGATLAQPMVNGQLANQTPSFAyPTNPQTQAFAQQPWRHDVTAYS 298
+                       577777777778888888877777777664414567777777777877666555 PP
+
+>> B0A55|B0A55_3971  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.2   2.4   3.4e-22   6.7e-19     148     244 ..     103     196 ..      92     212 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 67.2 bits;  conditional E-value: 3.4e-22
+        OTA34553.1 148 assgdstahvcicqpdpkiprprnafilyrqhhqaqvvaqnpglanpeiskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryqpkrn 240
+                       a++g +t          k+prp nafi+yr+   + vvaqnpg+ n  is iige+w+++  e++  ++  ae+ k +h+  +p y+yqp++ 
+  B0A55|B0A55_3971 103 ANAGQATVSKG---AADKVPRPPNAFIIYRKDWHSTVVAQNPGVHNNSISVIIGEKWRSESEEVREIYRRKAEDAKRQHELNHPEYQYQPRKP 192
+                       55555554433...3359************************************************************************987 PP
+
+        OTA34553.1 241 grrn 244
+                       +++ 
+  B0A55|B0A55_3971 193 SEKK 196
+                       6543 PP
+
+>> B0A55|B0A55_451  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.4   2.8   6.3e-22   1.2e-18     148     244 ..      16     109 ..       7     139 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 66.4 bits;  conditional E-value: 6.3e-22
+       OTA34553.1 148 assgdstahvcicqpdpkiprprnafilyrqhhqaqvvaqnpglanpeiskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryqpkrng 241
+                      a++g +t          k+prp nafi+yr+   + vvaqnpg+ n  is iige+w+++  e++  ++  ae+ k +h+  +p y+yqp++ +
+  B0A55|B0A55_451  16 ANAGQATVSKG---AADKVPRPPNAFIIYRKDWHSTVVAQNPGVHNNSISVIIGEKWRSESEEVREIYRRKAEDAKRQHELNHPEYQYQPRKPS 106
+                      55555554333...2359************************************************************************9876 PP
+
+       OTA34553.1 242 rrn 244
+                      ++ 
+  B0A55|B0A55_451 107 EKK 109
+                      544 PP
+
+>> B0A55|B0A55_12680  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.1   2.5   5.9e-11   1.2e-07     159     252 ..     161     255 ..      55     272 .. 0.75
+   2 ?   -3.8   1.8         1     2e+03     393     409 ..     536     552 ..     532     561 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 30.1 bits;  conditional E-value: 5.9e-11
+         OTA34553.1 159 icqpdpkiprprnafilyrqhhqaqvvaqnpglanpeiskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryqpkr.ngrrnslsse 249
+                        + + +  + rp n+f+lyr  +  +  a      +  +s + ge w  +p e++++++  a  e+ +h + +p y++ p + n rr    s+
+  B0A55|B0A55_12680 161 VEKRNGYVTRPMNSFMLYRSCYAERTKAWCVQNNHQVVSSVSGESWPMEPQEVRHQFEEWARVERENHAKAHPAYKFSPSKsNKRRKGEFSD 252
+                        455666799************99999998888888899*****************************************7615555554444 PP
+
+         OTA34553.1 250 tpg 252
+                          g
+  B0A55|B0A55_12680 253 DEG 255
+                        444 PP
+
+  == domain 2  score: -3.8 bits;  conditional E-value: 1
+         OTA34553.1 393 pypfshhqhqphpplps 409
+                        p p++h    phpplp+
+  B0A55|B0A55_12680 536 PTPLTHPIGLPHPPLPT 552
+                        88999**********97 PP
+
+>> B0A55|B0A55_6816  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.2   0.1   3.6e-09     7e-06     154     236 ..      18     101 ..       3     109 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 24.2 bits;  conditional E-value: 3.6e-09
+        OTA34553.1 154 tahvcicqpdpkip.rprnafilyrqhhqaqvvaqnpglanpeiskiigeqwqnqppeiknkwkalaeeeklrhqqqyptyryq 236
+                        a     + dp +p r  +a++++   ++ +v   npg+   e+ k++ge+w+    + k  + a a  +k r++++   y  q
+  B0A55|B0A55_6816  18 KADGGKKKKDPNMPkRGLSAYMFFANDQRDKVREDNPGIKFGEVGKMLGEKWKALNDKQKAPYDAKAAADKKRYEEEKAAYTAQ 101
+                       4444556789***94457899999999999999**********************99*******************99999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (891 nodes)
+Target sequences:                      13766  (6143021 residues searched)
+Passed MSV filter:                      2546  (0.184948); expected 275.3 (0.02)
+Passed bias filter:                      410  (0.0297835); expected 275.3 (0.02)
+Passed Vit filter:                        51  (0.00370478); expected 13.8 (0.001)
+Passed Fwd filter:                        12  (0.000871713); expected 0.1 (1e-05)
+Initial search space (Z):              13766  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.96u 0.02s 00:00:00.98 Elapsed: 00:00:01.97
+# Mc/sec: 2768.08
+//
+Query:       OTA25324.1  [L=1059]
+Description: hypothetical protein BTJ68_10027 [Hortaea werneckii EXF-2000]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+          0 2039.7  37.8          0 2039.5  37.8    1.0  1  B0A55|B0A55_4372  
+
+
+Domain annotation for each sequence (and alignments):
+>> B0A55|B0A55_4372  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ! 2039.5  37.8         0         0       1    1059 []       1    1062 []       1    1062 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 2039.5 bits;  conditional E-value: 0
+        OTA25324.1    1 maly.qttrnvdlsktetelstnirkatsieetapkrkhvracivytwdhkssqsfwngmkvspiqadevqtfkalitvhkvlqeghpval 90  
+                        maly q+trnvdlsk+etel+tnirkatsieetapkrkhvracivytwdhkssqsfwng+kv piqadevqtfkalitvhkvlqeghp+al
+  B0A55|B0A55_4372    1 MALYsQSTRNVDLSKSETELTTNIRKATSIEETAPKRKHVRACIVYTWDHKSSQSFWNGIKVQPIQADEVQTFKALITVHKVLQEGHPIAL 91  
+                        6888689************************************************************************************ PP
+
+        OTA25324.1   91 veaqqhtawlesltrgvggmsgdhgmrgyspliqeyifflvsklgfhrnhpefngtfeyeeyislksindpnegyetisdlmtlqdqidgf 181 
+                         eaqqh awlesl+rg+ggm g +gmrgyspli eyif+l+skl fhr+hpefngtfeyeeyislksindpnegyetisdlm lqdqid+f
+  B0A55|B0A55_4372   92 KEAQQHVAWLESLSRGMGGMGG-EGMRGYSPLISEYIFYLISKLRFHRDHPEFNGTFEYEEYISLKSINDPNEGYETISDLMNLQDQIDSF 181 
+                        ********************88.5******************************************************************* PP
+
+        OTA25324.1  182 qklifshfrngnnnecrisalvplvsesygiykfitsmlramhttlgddealsplrgrydaqhyrlvrfyyecsnlryltslitipklpqd 272 
+                        qklif+hfr g+nnecrisalvplv esygiykf tsmlramhttlgddealsplrgrydaqhyrlvrfyyecsnlryltslit+pklpqd
+  B0A55|B0A55_4372  182 QKLIFAHFRGGSNNECRISALVPLVQESYGIYKFATSMLRAMHTTLGDDEALSPLRGRYDAQHYRLVRFYYECSNLRYLTSLITVPKLPQD 272 
+                        ******************************************************************************************* PP
+
+        OTA25324.1  273 ppnligedeaapalparpknaeitkpktppv..qesadpepinefwkneqarqqeeyaaeqarlqaqwedaqrqqqaqdmarqrefeeqqr 361 
+                        pp+l+ +deaapalparp+   +tkp +pp   +e+adpepinefwkneqarqqeeyaaeqarlqaqwedaqrqqqa  +  qr+feeqqr
+  B0A55|B0A55_4372  273 PPSLL-DDEAAPALPARPRGEPVTKPVSPPPrpREAADPEPINEFWKNEQARQQEEYAAEQARLQAQWEDAQRQQQAAALQAQRDFEEQQR 362 
+                        ***99.79*******************99963369******************************************************** PP
+
+        OTA25324.1  362 lqaeqqrlqleqlqrqqfaeqtqgrmaelerenlnaraqyerdqlmlqqydqrmkalegelnqlnvnfqqqqgsrddqiralqeqvntwrt 452 
+                        lqaeqqrlqleqlqrqq+++qtqgrmaele+enlnaraqyerdqlml+qyd+rmkalege+ qln nfqqq  s+ddqiralqeqvntwrt
+  B0A55|B0A55_4372  363 LQAEQQRLQLEQLQRQQYSQQTQGRMAELEQENLNARAQYERDQLMLEQYDRRMKALEGEIAQLNANFQQQSQSKDDQIRALQEQVNTWRT 453 
+                        ******************************************************************************************* PP
+
+        OTA25324.1  453 kyealaklysqlrhehlellqkfkgvqlkaasaqeaidkreklerelktknleladmirerdramhekdrstgghkdeveklkrelrmald 543 
+                        kyealaklysqlrhehlellq+fkgvqlkaasaqeaid+rekl++elktknleladmirerdra+h+kdr+tggh+de+eklkrelrmald
+  B0A55|B0A55_4372  454 KYEALAKLYSQLRHEHLELLQRFKGVQLKAASAQEAIDQREKLQKELKTKNLELADMIRERDRALHDKDRTTGGHRDELEKLKRELRMALD 544 
+                        ******************************************************************************************* PP
+
+        OTA25324.1  544 raenadrakgselsallsrhnreiadleealrnktralddqqfklgegssdlerqlqekeeeveiyksgmdeallelnelrqnggqgdkam 634 
+                        raenadrakgselsa+lsrhnreiadleealrnktraldd q k+gegssdlerql+ekeee+eiyksgmd+ llelnelr ng  +d am
+  B0A55|B0A55_4372  545 RAENADRAKGSELSAMLSRHNREIADLEEALRNKTRALDDVQSKFGEGSSDLERQLREKEEELEIYKSGMDQTLLELNELRSNGHVNDSAM 635 
+                        ******************************************************************************************* PP
+
+        OTA25324.1  635 deqidimlldnvkrinsiidsvlqsgvqrvddalyeldssmqagnqnasgpyvlsqiekaqsnamefstafnsfiadgpnsdqsevirtvh 725 
+                        deqid+mlldn+++in iidsvlqsgvqrvddalyeldssmqagnqnasgpyvlsqiekaqs+amefstafn+fiadgpns  +evirtvh
+  B0A55|B0A55_4372  636 DEQIDVMLLDNIRKINDIIDSVLQSGVQRVDDALYELDSSMQAGNQNASGPYVLSQIEKAQSSAMEFSTAFNNFIADGPNSTHAEVIRTVH 726 
+                        ******************************************************************************************* PP
+
+        OTA25324.1  726 afsnaiadvlsntkgltrfasddkkadqlvnaarrsasgsvdffrgimsyrldgledlektdvvinknndvqialnqlskladafapkt.k 815 
+                         fsnaiadvlsntkgltrfasddkk dql++a rrsas++vdffrgimsyrldgledl+ktdvvinknn+vqialn lskladafapkt k
+  B0A55|B0A55_4372  727 TFSNAIADVLSNTKGLTRFASDDKKGDQLISATRRSASSTVDFFRGIMSYRLDGLEDLQKTDVVINKNNEVQIALNNLSKLADAFAPKTtK 817 
+                        ***************************************************************************************9549 PP
+
+        OTA25324.1  816 ltnqsgdigelvdremtnaakaidaaterlnklmnkprdqystyelkihdsileaaiavtnaiaqlikaatasqqeivqqgrgtsmsktqf 906 
+                        ++n sgd+gelvdrem naakai+aaterl klmnkprd ystyelkihdsileaaiavtnaiaqlikaatasqqeivqqgrg++msktqf
+  B0A55|B0A55_4372  818 ISNASGDLGELVDREMGNAAKAIEAATERLTKLMNKPRDSYSTYELKIHDSILEAAIAVTNAIAQLIKAATASQQEIVQQGRGSTMSKTQF 908 
+                        ******************************************************************************************* PP
+
+        OTA25324.1  907 ykknnrwteglisaakavarstnmlietadgvisgrnspeqlivasndvaastaqlvaasrvkasfasktqerleesskavtnacrslvrq 997 
+                        ykknnrwteglisaakavarstn lietadgvisgrnspeqlivasndvaastaqlvaasrvkasf sktqerlee skavt acrslvrq
+  B0A55|B0A55_4372  909 YKKNNRWTEGLISAAKAVARSTNTLIETADGVISGRNSPEQLIVASNDVAASTAQLVAASRVKASFMSKTQERLEECSKAVTGACRSLVRQ 999 
+                        ******************************************************************************************* PP
+
+        OTA25324.1  998 vqsiiegr.kdgdedvdysklsghdfkvrqmeqqveilqlenalssarhrlgemrkisyqeed 1059
+                        vq iie++ ++g ed+dy klsghdfkvrqmeqqveilqlen+ls+arhrlgemrkisyqeed
+  B0A55|B0A55_4372 1000 VQKIIESKqREGGEDMDYGKLSGHDFKVRQMEQQVEILQLENSLSAARHRLGEMRKISYQEED 1062
+                        ******86379***************************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (1059 nodes)
+Target sequences:                      13766  (6143021 residues searched)
+Passed MSV filter:                      1114  (0.080924); expected 275.3 (0.02)
+Passed bias filter:                      400  (0.0290571); expected 275.3 (0.02)
+Passed Vit filter:                        53  (0.00385007); expected 13.8 (0.001)
+Passed Fwd filter:                         7  (0.000508499); expected 0.1 (1e-05)
+Initial search space (Z):              13766  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 1.23u 0.02s 00:00:01.25 Elapsed: 00:00:02.50
+# Mc/sec: 2601.75
+//
+Query:       OTA36028.1  [L=1059]
+Description: hypothetical protein BTJ68_03602 [Hortaea werneckii EXF-2000]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+          0 2043.1  38.4          0 2043.0  38.4    1.0  1  B0A55|B0A55_4372  
+
+
+Domain annotation for each sequence (and alignments):
+>> B0A55|B0A55_4372  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ! 2043.0  38.4         0         0       1    1059 []       1    1062 []       1    1062 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 2043.0 bits;  conditional E-value: 0
+        OTA36028.1    1 maly.qttrnvdlsktetelttnirkatsieetapkrkhvracivytwdhkssqsfwngmkvspiqadevqtfkalitvhkvlqeghpial 90  
+                        maly q+trnvdlsk+etelttnirkatsieetapkrkhvracivytwdhkssqsfwng+kv piqadevqtfkalitvhkvlqeghpial
+  B0A55|B0A55_4372    1 MALYsQSTRNVDLSKSETELTTNIRKATSIEETAPKRKHVRACIVYTWDHKSSQSFWNGIKVQPIQADEVQTFKALITVHKVLQEGHPIAL 91  
+                        6888689************************************************************************************ PP
+
+        OTA36028.1   91 keaqqhtawlesltrgvggmsgdhgargyspliqeyifflisklgfhrnhpefngtfeyeeyislksindpnegyetisdlmtlqdqidgf 181 
+                        keaqqh awlesl+rg+ggm g+ g rgyspli eyif+liskl fhr+hpefngtfeyeeyislksindpnegyetisdlm lqdqid+f
+  B0A55|B0A55_4372   92 KEAQQHVAWLESLSRGMGGMGGE-GMRGYSPLISEYIFYLISKLRFHRDHPEFNGTFEYEEYISLKSINDPNEGYETISDLMNLQDQIDSF 181 
+                        ********************885.9****************************************************************** PP
+
+        OTA36028.1  182 qklifshfrsgtnnecrisalvplvsesygiykfitsmlramhttlgddealsplrgrydaqhyrlvrfyyecsnlryltslitipklpqd 272 
+                        qklif+hfr g+nnecrisalvplv esygiykf tsmlramhttlgddealsplrgrydaqhyrlvrfyyecsnlryltslit+pklpqd
+  B0A55|B0A55_4372  182 QKLIFAHFRGGSNNECRISALVPLVQESYGIYKFATSMLRAMHTTLGDDEALSPLRGRYDAQHYRLVRFYYECSNLRYLTSLITVPKLPQD 272 
+                        ******************************************************************************************* PP
+
+        OTA36028.1  273 ppnligedeaapalparpknaeitkpktppv..qesadpepinefwkneqarqqeeyaaeqarlqaqwedaqrqqqaqdmarqrefeeqqr 361 
+                        pp+l+ +deaapalparp+   +tkp +pp   +e+adpepinefwkneqarqqeeyaaeqarlqaqwedaqrqqqa  +  qr+feeqqr
+  B0A55|B0A55_4372  273 PPSLL-DDEAAPALPARPRGEPVTKPVSPPPrpREAADPEPINEFWKNEQARQQEEYAAEQARLQAQWEDAQRQQQAAALQAQRDFEEQQR 362 
+                        ***99.79*******************99963369******************************************************** PP
+
+        OTA36028.1  362 lqaeqqrlqleqlqrqqfaeqtqgrmaelerenlnaraqyerdqlmlqqydqrmkalegelnqlnanfqqqqgsrddqiralqeqvntwrt 452 
+                        lqaeqqrlqleqlqrqq+++qtqgrmaele+enlnaraqyerdqlml+qyd+rmkalege+ qlnanfqqq  s+ddqiralqeqvntwrt
+  B0A55|B0A55_4372  363 LQAEQQRLQLEQLQRQQYSQQTQGRMAELEQENLNARAQYERDQLMLEQYDRRMKALEGEIAQLNANFQQQSQSKDDQIRALQEQVNTWRT 453 
+                        ******************************************************************************************* PP
+
+        OTA36028.1  453 kyealaklysqlrhehlellqkfkgvqlkaasaqeaidrreklerelktknleladmirerdramhekdrstgghkdeveklkrelrmald 543 
+                        kyealaklysqlrhehlellq+fkgvqlkaasaqeaid+rekl++elktknleladmirerdra+h+kdr+tggh+de+eklkrelrmald
+  B0A55|B0A55_4372  454 KYEALAKLYSQLRHEHLELLQRFKGVQLKAASAQEAIDQREKLQKELKTKNLELADMIRERDRALHDKDRTTGGHRDELEKLKRELRMALD 544 
+                        ******************************************************************************************* PP
+
+        OTA36028.1  544 raenadrakgselsallsrhnreiadleealrsktralddqqfklgegssdlerqlqekeeeveiyksgmdeallelnelrqnggqgdkam 634 
+                        raenadrakgselsa+lsrhnreiadleealr+ktraldd q k+gegssdlerql+ekeee+eiyksgmd+ llelnelr ng  +d am
+  B0A55|B0A55_4372  545 RAENADRAKGSELSAMLSRHNREIADLEEALRNKTRALDDVQSKFGEGSSDLERQLREKEEELEIYKSGMDQTLLELNELRSNGHVNDSAM 635 
+                        ******************************************************************************************* PP
+
+        OTA36028.1  635 deqidimlldnvkrvnaiidsvlqsgvqrvddalyeldssmqagnqnasgpyvlsqiekaqsnamefstafnsfiadgpnsdqsevirtvh 725 
+                        deqid+mlldn++++n iidsvlqsgvqrvddalyeldssmqagnqnasgpyvlsqiekaqs+amefstafn+fiadgpns  +evirtvh
+  B0A55|B0A55_4372  636 DEQIDVMLLDNIRKINDIIDSVLQSGVQRVDDALYELDSSMQAGNQNASGPYVLSQIEKAQSSAMEFSTAFNNFIADGPNSTHAEVIRTVH 726 
+                        ******************************************************************************************* PP
+
+        OTA36028.1  726 afsnaiadvlsntkgltrfasddkkadqlvnaarrsasssvdffrgimsyrldgledlektdvvinknndvqialnqlskladafapkt.k 815 
+                         fsnaiadvlsntkgltrfasddkk dql++a rrsass+vdffrgimsyrldgledl+ktdvvinknn+vqialn lskladafapkt k
+  B0A55|B0A55_4372  727 TFSNAIADVLSNTKGLTRFASDDKKGDQLISATRRSASSTVDFFRGIMSYRLDGLEDLQKTDVVINKNNEVQIALNNLSKLADAFAPKTtK 817 
+                        ***************************************************************************************9549 PP
+
+        OTA36028.1  816 ltnqsgdigelvdremtnaakaidaaterlnklmnkprdqystyelkihdsileaaiavtnaiaqlikaatasqqeivqqgrgssmsktqf 906 
+                        ++n sgd+gelvdrem naakai+aaterl klmnkprd ystyelkihdsileaaiavtnaiaqlikaatasqqeivqqgrgs+msktqf
+  B0A55|B0A55_4372  818 ISNASGDLGELVDREMGNAAKAIEAATERLTKLMNKPRDSYSTYELKIHDSILEAAIAVTNAIAQLIKAATASQQEIVQQGRGSTMSKTQF 908 
+                        ******************************************************************************************* PP
+
+        OTA36028.1  907 ykknnrwteglisaakavarstnmlietadgvisgrnspeqlivasndvaastaqlvaasrvkasfasktqerleesskavtnacrslvrq 997 
+                        ykknnrwteglisaakavarstn lietadgvisgrnspeqlivasndvaastaqlvaasrvkasf sktqerlee skavt acrslvrq
+  B0A55|B0A55_4372  909 YKKNNRWTEGLISAAKAVARSTNTLIETADGVISGRNSPEQLIVASNDVAASTAQLVAASRVKASFMSKTQERLEECSKAVTGACRSLVRQ 999 
+                        ******************************************************************************************* PP
+
+        OTA36028.1  998 vqsiiegr.kdgeedvdysklsghdfkvrqmeqqveilqlenalssarhrlgemrkisyqeed 1059
+                        vq iie++ ++g ed+dy klsghdfkvrqmeqqveilqlen+ls+arhrlgemrkisyqeed
+  B0A55|B0A55_4372 1000 VQKIIESKqREGGEDMDYGKLSGHDFKVRQMEQQVEILQLENSLSAARHRLGEMRKISYQEED 1062
+                        ******86379***************************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (1059 nodes)
+Target sequences:                      13766  (6143021 residues searched)
+Passed MSV filter:                      1152  (0.0836844); expected 275.3 (0.02)
+Passed bias filter:                      418  (0.0303647); expected 275.3 (0.02)
+Passed Vit filter:                        50  (0.00363214); expected 13.8 (0.001)
+Passed Fwd filter:                         6  (0.000435856); expected 0.1 (1e-05)
+Initial search space (Z):              13766  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 1.21u 0.02s 00:00:01.23 Elapsed: 00:00:02.42
+# Mc/sec: 2680.74
+//
+[ok]
