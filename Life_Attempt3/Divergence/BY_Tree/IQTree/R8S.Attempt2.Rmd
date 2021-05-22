@@ -1,0 +1,125 @@
+---
+title: "Fast_Tree_R8S.Attempt2"
+author: "Tania Kurbessoian"
+date: "10/22/2020"
+output: pdf_document
+---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{R}
+library(ape)
+library(phytools)
+library(RColorBrewer)
+library(ggtree)
+library(ggplot2)
+library(devtools)
+library(deeptime)
+library(ggrepel)
+library(phangorn)
+library(tidytree)
+library(treeio)
+library(tidyverse)
+library(timetree)
+library(dispRity)
+```
+
+```{R}
+#can include r8s files using treeio
+#r8s <- read.r8s("/Users/taniakurbessoian/Desktop/TimeTree/r8s_log.txt")
+#ggtree(r8s)
+
+#FastTree Documentation
+BYTree <- read.tree("r8s.TREE.LONG.tre")
+is.ultrametric(BYTree) #just wanted to check
+
+new_seq <- BYTree$tip.label
+dd = data.frame(new_seq)
+dd$Species = 0
+dd$Species[grep("simplex", dd$new_seq)] = "Friedmanniomyces simplex"
+dd$Species[grep("endolithicus", dd$new_seq)] = "Friedmanniomyces endolithicus"
+dd$Species[grep("werneckii", dd$new_seq)] = "Hortaea werneckii"
+dd$Species[grep("TYU", dd$new_seq)] = "Cladosporium cladosporiodes"
+dd$Species[grep("5527", dd$new_seq)] = "Rachicladosporium antarcticum"
+dd$Species[grep("135680", dd$new_seq)] = "Aspergillus ruber"
+dd$Species[grep("Af293", dd$new_seq)] = "Aspergillus fumigatus"
+dd$Species[grep("NIH", dd$new_seq)] = "Exophiala dermatitidis"
+dd$Species[grep("83496", dd$new_seq)] = "Cladophialophora immunda"
+dd$Species[grep("CCFEE6314", dd$new_seq)] = "Exophiala mesophila"
+dd$Species[grep("OR74A", dd$new_seq)] = "Neurospora crassa"
+dd$Species[grep("70-15", dd$new_seq)] = "Magnaporthe oryzae"
+dd$Species[grep("PH-1", dd$new_seq)] = "Fusarium graminearum"
+dd$Species[grep("CLIB122", new_seq)] = "Yarrowia lipolytica"
+dd$Species[grep("S288C", new_seq)] = "Saccharomyces cerevisiae"  
+BYTree$tip.label <- dd$Species
+
+BYTree$root.time <- 485
+q = ggtree(BYTree, size = 1.1) + coord_geo(xlim = c(-460,120), ylim = c(0.95,Ntip(BYTree)), neg = TRUE, expand = 5) + scale_x_continuous(breaks=seq(-460,-25,50), labels=abs(seq(-460,-25,50)))  + geom_tree() +
+geom_cladelabel(node=29, label=" 62.19 Mya",color="red2", offset=-55, fontsize = 2, barsize = 0) +
+geom_cladelabel(node=28, label=" 350.14 Mya",color="red2", offset=-345, fontsize = 2, barsize = 0) +
+geom_cladelabel(node=26, label=" 356.87 Mya",color="red2", offset=-350, fontsize = 2, vjust = 2.5, barsize = 0)+ 
+geom_cladelabel(node=27, label=" 224.11 Mya",color="red2", offset=-218, fontsize = 2, barsize = 0)+ 
+geom_cladelabel(node=24, label=" 90.76 Mya",color="red2", offset=-84, fontsize = 2, barsize = 0) + 
+geom_cladelabel(node=23, label=" 121 Mya",color="red2", offset=-115, fontsize = 2, barsize = 0, vjust = 2) + 
+geom_cladelabel(node=25, label=" 106.93 Mya",color="red2", offset=-100, fontsize = 2, barsize = 0) + 
+geom_cladelabel(node=20, label=" 177.9 Mya",color="red2", offset=-170, fontsize = 2, barsize = 0) + 
+geom_cladelabel(node=19, label=" 214.89 Mya",color="red2", offset=-208, fontsize = 2, vjust = 2, barsize = 0) + 
+geom_cladelabel(node=17, label=" 425.77 Mya",color="red2", offset=-420, fontsize = 2, vjust = 15, barsize = 0) + 
+geom_cladelabel(node=16, label=" 449 Mya",color="red2", offset=-470, fontsize = 2, vjust = 22, barsize = 0) + 
+geom_cladelabel(node=21, label=" 387.8 Mya",color="red2", offset=-380, fontsize = 2, barsize = 0) + 
+geom_cladelabel(node=22, label=" 376.27 Mya",color="red2", offset=-370, fontsize = 2, barsize = 0) + 
+geom_cladelabel(node=18, label=" 391.64 Mya",color="red2", offset=-385, fontsize = 2, vjust = 12, barsize = 0) +
+geom_tiplab(size = 3, align=TRUE, hjust = -0.02) + theme_tree2(plot.margin=margin(5, 5, 5, 5))
+revts(q)
+ggsave("FastTree.BY_TimeTree.pdf",q, width=10, height=4)
+ggsave("FastTree.r8s.iqtree.png",revts(q), width=8, height=4)
+```
+
+```{R}
+IQBY_Tree <-read.tree("Fried.r8s.ROOTED.LONG.tre")
+new_seq <- IQBY_Tree$tip.label
+dd = data.frame(new_seq)
+dd$Species = 0
+dd$Species[grep("simplex", dd$new_seq)] = "Friedmanniomyces simplex"
+dd$Species[grep("endolithicus", dd$new_seq)] = "Friedmanniomyces endolithicus"
+dd$Species[grep("werneckii", dd$new_seq)] = "Hortaea werneckii"
+dd$Species[grep("TYU", dd$new_seq)] = "Cladosporium cladosporiodes"
+dd$Species[grep("5527", dd$new_seq)] = "Rachicladosporium antarcticum"
+dd$Species[grep("135680", dd$new_seq)] = "Aspergillus ruber"
+dd$Species[grep("Af293", dd$new_seq)] = "Aspergillus fumigatus"
+dd$Species[grep("NIH", dd$new_seq)] = "Exophiala dermatitidis"
+dd$Species[grep("83496", dd$new_seq)] = "Cladophialophora immunda"
+dd$Species[grep("CCFEE6314", dd$new_seq)] = "Exophiala mesophila"
+dd$Species[grep("OR74A", dd$new_seq)] = "Neurospora crassa"
+dd$Species[grep("70-15", dd$new_seq)] = "Magnaporthe oryzae"
+dd$Species[grep("PH-1", dd$new_seq)] = "Fusarium graminearum"
+dd$Species[grep("CLIB122", new_seq)] = "Yarrowia lipolytica"
+dd$Species[grep("S288C", new_seq)] = "Saccharomyces cerevisiae"  
+IQBY_Tree$tip.label <- dd$Species
+
+IQBY_Tree$root.time <- 485
+w = ggtree(IQBY_Tree) + geom_text(aes(label=node), hjust=-.3)
+w
+q = ggtree(IQBY_Tree, size = 1.1) + coord_geo(xlim = c(-770,120), ylim = c(0.95,Ntip(IQBY_Tree)), neg = TRUE, expand = 5) + scale_x_continuous(breaks=seq(-840,-25,50), labels=abs(seq(-840,-25,50)))  + geom_tree() +
+geom_cladelabel(node=29, label=" 77.46 Mya",color="red2", offset=-75, fontsize = 2, barsize = 0) +
+geom_cladelabel(node=28, label=" 236.95 Mya",color="red2", offset=-230, fontsize = 2, barsize = 0, vjust = 1) +
+geom_cladelabel(node=26, label=" 350.14 Mya",color="red2", offset=-343, fontsize = 2, vjust = 1.5, barsize = 0)+ 
+geom_cladelabel(node=27, label=" 248.57 Mya",color="red2", offset=-240, fontsize = 2, barsize = 0)+ 
+geom_cladelabel(node=24, label=" 109.86 Mya",color="red2", offset=-100, fontsize = 2, barsize = 0) + 
+geom_cladelabel(node=23, label=" 143.33 Mya",color="red2", offset=-135, fontsize = 2, barsize = 0, vjust = 2) + 
+geom_cladelabel(node=25, label=" 126.83 Mya",color="red2", offset=-120, fontsize = 2, barsize = 0) + 
+geom_cladelabel(node=20, label=" 243.37 Mya",color="red2", offset=-235, fontsize = 2, barsize = 0) + 
+geom_cladelabel(node=19, label=" 295.82 Mya",color="red2", offset=-285, fontsize = 2, vjust = 2, barsize = 0) + 
+geom_cladelabel(node=17, label=" 449 Mya",color="red2", offset=-440, fontsize = 2, barsize = 0) + 
+geom_cladelabel(node=16, label=" 796.35 Mya",color="red2", offset=-790, fontsize = 2, vjust = 14, barsize = 0) + 
+geom_cladelabel(node=21, label=" 518.74 Mya",color="red2", offset=-515, fontsize = 2, barsize = 0) + 
+geom_cladelabel(node=22, label=" 395.67 Mya",color="red2", offset=-390, fontsize = 2, barsize = 0, vjust = 2) + 
+geom_cladelabel(node=18, label=" 561.88 Mya",color="red2", offset=-560, fontsize = 2, vjust = 8, barsize = 0) +
+geom_tiplab(size = 3, align=TRUE, hjust = -0.02) + theme_tree2()
+revts(q)
+
+ggsave("TimeTree.r8s_IQ_Tree2.pdf",revts(q), width=11, height=4)
+ggsave("IQTree,r8s.iqtree.png",revts(q), width=11, height=4)
+```
