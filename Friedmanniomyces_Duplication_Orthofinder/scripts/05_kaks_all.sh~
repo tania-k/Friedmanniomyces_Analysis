@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+#SBATCH -p short -N 1 -n 24 --mem 48gb --out logs/cds_yn00_all.log
+
+module unload perl
+module load parallel
+modlue load subopt-kaks
+
+INDIR=CDS_aligned_per_species
